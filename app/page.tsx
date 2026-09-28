@@ -1,6 +1,7 @@
 import { headers } from "next/headers";
 import { auth } from "@/auth";
 import SignIn from "./signin";
+import WebWorkerDemo from "./WebWorkerDemo";
 
 export default async function Home() {
   const headersList = await headers();
@@ -51,6 +52,8 @@ export default async function Home() {
           <SignIn />
         )}
       </div>
+
+      <WebWorkerDemo />
     </main>
   );
 }
